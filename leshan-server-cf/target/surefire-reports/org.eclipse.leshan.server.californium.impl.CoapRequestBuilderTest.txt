@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.eclipse.leshan.server.californium.impl.CoapRequestBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in org.eclipse.leshan.server.californium.impl.CoapRequestBuilderTest

@@ -1,0 +1,12 @@
+org/eclipse/leshan/core/californium/AsyncRequestObserver$1.class
+org/eclipse/leshan/core/californium/SyncRequestObserver.class
+org/eclipse/leshan/core/californium/EndpointFactory.class
+org/eclipse/leshan/core/californium/AbstractRequestObserver.class
+org/eclipse/leshan/core/californium/CoapResponseCallback.class
+org/eclipse/leshan/core/californium/ResponseCodeUtil.class
+org/eclipse/leshan/core/californium/Lwm2mEndpointContextMatcher.class
+org/eclipse/leshan/core/californium/AsyncRequestObserver.class
+org/eclipse/leshan/core/californium/EndpointContextUtil.class
+org/eclipse/leshan/core/californium/CoapAsyncRequestObserver.class
+org/eclipse/leshan/core/californium/CoapAsyncRequestObserver$1.class
+org/eclipse/leshan/core/californium/CoapSyncRequestObserver.class

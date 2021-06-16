@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.eclipse.leshan.integration.tests.CreateTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 1.078 s - in org.eclipse.leshan.integration.tests.CreateTest

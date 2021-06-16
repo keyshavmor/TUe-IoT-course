@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1547934373260
+Build-Jdk: 10.0.2
+Built-By: keyshav
+Bundle-Description: Shared classes between server and client which depen
+ ds on CoAP Californium
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html, http://www.ec
+ lipse.org/org/documents/edl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: leshan - core californium
+Bundle-SymbolicName: leshan-core-cf
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.eclipse.leshan.core.californium;uses:="org.eclipse.c
+ alifornium.core.coap,org.eclipse.californium.core.network,org.eclipse.c
+ alifornium.core.network.config,org.eclipse.californium.core.observe,org
+ .eclipse.californium.elements,org.eclipse.californium.scandium.config,o
+ rg.eclipse.leshan,org.eclipse.leshan.core.request,org.eclipse.leshan.co
+ re.response";version="1.0.0"
+Import-Package: javax.security.auth.x500,org.eclipse.californium.core.co
+ ap;version="[2.0,3)",org.eclipse.californium.core.network;version="[2.0
+ ,3)",org.eclipse.californium.core.network.config;version="[2.0,3)",org.
+ eclipse.californium.core.observe;version="[2.0,3)",org.eclipse.californ
+ ium.elements;version="[2.0,3)",org.eclipse.californium.elements.auth;ve
+ rsion="[2.0,3)",org.eclipse.californium.scandium.config;version="[2.0,3
+ )",org.eclipse.leshan;version="[1.0,2)",org.eclipse.leshan.core.request
+ ;version="[1.0,2)",org.eclipse.leshan.core.request.exception;version="[
+ 1.0,2)",org.eclipse.leshan.core.response;version="[1.0,2)",org.eclipse.
+ leshan.util;version="[1.0,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-3.5.0.201709291849

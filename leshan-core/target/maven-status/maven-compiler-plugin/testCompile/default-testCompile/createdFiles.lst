@@ -1,0 +1,12 @@
+org/eclipse/leshan/tlv/TlvDecoderTest.class
+org/eclipse/leshan/core/node/codec/Lwm2mValueConverterTest.class
+org/eclipse/leshan/core/attributes/AttributeTest.class
+org/eclipse/leshan/core/node/LwM2MResourceTest.class
+org/eclipse/leshan/tlv/TlvEncoderTest.class
+org/eclipse/leshan/json/ObjectModelSerDesTest.class
+org/eclipse/leshan/json/JsonSerializerTest.class
+org/eclipse/leshan/json/JsonDeserializerTest.class
+org/eclipse/leshan/core/node/codec/LwM2mNodeDecoderTest.class
+org/eclipse/leshan/LinkObjectTest.class
+org/eclipse/leshan/core/node/codec/LwM2mNodeEncoderTest.class
+org/eclipse/leshan/core/attributes/AttributeSetTest.class

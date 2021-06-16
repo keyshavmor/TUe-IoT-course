@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1547934399793
+Build-Jdk: 10.0.2
+Built-By: keyshav
+Bundle-Description: A transport implementation for leshan client based o
+ n CoAP Californium
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html, http://www.ec
+ lipse.org/org/documents/edl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: leshan - client californium
+Bundle-SymbolicName: leshan-client-cf
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.eclipse.leshan.client.californium;uses:="org.eclipse
+ .californium.core,org.eclipse.californium.core.network.config,org.eclip
+ se.californium.scandium.config,org.eclipse.leshan.client,org.eclipse.le
+ shan.client.observer,org.eclipse.leshan.client.resource,org.eclipse.les
+ han.core.californium";version="1.0.0",org.eclipse.leshan.client.califor
+ nium.impl;uses:="org.eclipse.californium.core,org.eclipse.californium.c
+ ore.coap,org.eclipse.californium.core.network,org.eclipse.californium.c
+ ore.network.config,org.eclipse.californium.core.observe,org.eclipse.cal
+ ifornium.core.server.resources,org.eclipse.californium.scandium.config,
+ org.eclipse.californium.scandium.dtls.pskstore,org.eclipse.californium.
+ scandium.util,org.eclipse.leshan.client.request,org.eclipse.leshan.clie
+ nt.resource,org.eclipse.leshan.client.servers,org.eclipse.leshan.core.c
+ alifornium,org.eclipse.leshan.core.node.codec,org.eclipse.leshan.core.r
+ equest,org.eclipse.leshan.core.response";version="1.0.0"
+Import-Package: org.eclipse.californium.core;version="[2.0,3)",org.eclip
+ se.californium.core.coap;version="[2.0,3)",org.eclipse.californium.core
+ .network;version="[2.0,3)",org.eclipse.californium.core.network.config;
+ version="[2.0,3)",org.eclipse.californium.core.observe;version="[2.0,3)
+ ",org.eclipse.californium.core.server.resources;version="[2.0,3)",org.e
+ clipse.californium.elements;version="[2.0,3)",org.eclipse.californium.e
+ lements.auth;version="[2.0,3)",org.eclipse.californium.scandium;version
+ ="[2.0,3)",org.eclipse.californium.scandium.config;version="[2.0,3)",or
+ g.eclipse.californium.scandium.dtls;version="[2.0,3)",org.eclipse.calif
+ ornium.scandium.dtls.pskstore;version="[2.0,3)",org.eclipse.californium
+ .scandium.dtls.rpkstore;version="[2.0,3)",org.eclipse.californium.scand
+ ium.dtls.x509;version="[2.0,3)",org.eclipse.californium.scandium.util;v
+ ersion="[2.0,3)",org.eclipse.leshan;version="[1.0,2)",org.eclipse.lesha
+ n.client;version="[1.0,2)",org.eclipse.leshan.client.californium.impl,o
+ rg.eclipse.leshan.client.object;version="[1.0,2)",org.eclipse.leshan.cl
+ ient.observer;version="[1.0,2)",org.eclipse.leshan.client.request;versi
+ on="[1.0,2)",org.eclipse.leshan.client.resource;version="[1.0,2)",org.e
+ clipse.leshan.client.servers;version="[1.0,2)",org.eclipse.leshan.core.
+ attributes;version="[1.0,2)",org.eclipse.leshan.core.californium;versio
+ n="[1.0,2)",org.eclipse.leshan.core.model;version="[1.0,2)",org.eclipse
+ .leshan.core.node;version="[1.0,2)",org.eclipse.leshan.core.node.codec;
+ version="[1.0,2)",org.eclipse.leshan.core.request;version="[1.0,2)",org
+ .eclipse.leshan.core.request.exception;version="[1.0,2)",org.eclipse.le
+ shan.core.response;version="[1.0,2)",org.eclipse.leshan.util;version="[
+ 1.0,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-3.5.0.201709291849

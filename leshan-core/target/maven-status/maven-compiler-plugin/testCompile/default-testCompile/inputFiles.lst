@@ -1,0 +1,12 @@
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/json/JsonDeserializerTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/attributes/AttributeTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/attributes/AttributeSetTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/node/codec/Lwm2mValueConverterTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/LinkObjectTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/node/LwM2MResourceTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/node/codec/LwM2mNodeEncoderTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/tlv/TlvEncoderTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/tlv/TlvDecoderTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/json/ObjectModelSerDesTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/core/node/codec/LwM2mNodeDecoderTest.java
+/home/keyshav/ti/leshan/leshan-core/src/test/java/org/eclipse/leshan/json/JsonSerializerTest.java

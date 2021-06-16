@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.eclipse.leshan.core.node.codec.Lwm2mValueConverterTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.eclipse.leshan.core.node.codec.Lwm2mValueConverterTest

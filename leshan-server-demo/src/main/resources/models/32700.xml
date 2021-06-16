@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Parking Spot</Name>
+		<Description1>Self defined object for parking spot device.</Description1>
+		<ObjectID>32700</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:ext:32700</ObjectURN>
+		<MultipleInstances>Single</MultipleInstances>
+		<Mandatory>Mandatory</Mandatory>
+		<Resources>
+			<Item ID="32800">
+				<Name>Parking Spot ID</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units>Defined by “Units” resource.</Units>
+				<Description>The ID number of the parking spot</Description>
+			</Item>
+			<Item ID="32801">
+				<Name>Parking Spot State</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>occupied, free, reserved</RangeEnumeration>
+				<Units></Units>
+				<Description>The state of the parking spot whether it is occupied, free or reserved</Description>
+			</Item>
+			<Item ID="32802">
+				<Name>Vehicle ID</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description>Vehicle id that is currently reserving or occupying the parking spot</Description>
+			</Item>
+			<Item ID="32803">
+				<Name>Billing Rate</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units>EUR</Units>
+				<Description>Billing rate of the parking spot per minute</Description>
+			</Item>
+			<Item ID="32804">
+				<Name>Vehicle Plate Image Link</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description>A valid image of the license plate of the parked vehicle.</Description>
+			</Item>
+		</Resources>
+		<Description2></Description2>
+	</Object>
+</LWM2M>

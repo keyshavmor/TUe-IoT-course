@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Parking reservation system</h1>
+<p>
+<div class="btn-group">
+<p>
+	<input type="button" onclick="update_parkingspots()" value="See parking spaces:"</button>
+</p>
+<p>
+	<textarea id="parkingspotlist" rows="15" cols="50" readonly>
+	</textarea>
+</p>
+<p>
+	<textarea id="reservationfeedback" rows="2" cols="50" readonly>
+	</textarea>
+</p>
+<input type="text" id="parkingspot_id_field" size="20">
+<--<input type="text" id="result_2" size="20">
+<input type="button" onclick="put_license_plate()" value="Register with License plate"</button>
+
+<input type="button" onclick="put_reserve_spot()" value="Reserve Parking Spot"</button>
+</div>
+</p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+var client = "http://localhost:8080/api/clients?"
+var clientstatus = "http://localhost:8080/api/clients/"
+var vehicleID = "/32700/0/32802"
+var objectid = "/32700/0/32801"
+var parkingspotname = [];
+var parkingspotstatus = [];
+
+	function update_parkingspots()
+	{
+		var entiremessagestring = "";
+		xhttp.open("GET",client, true);
+		xhttp.send();
+		xhttp.onreadystatechange = 
+		function() {
+			document.getElementById('parkingspotlist').value = "";
+			if (this.readyState == 4 && this.status == 200) {
+				// Typical action to be performed when the document is ready:
+				//document.getElementById("demo").innerHTML = xhttp.responseText;
+				var response = JSON.parse(xhttp.responseText);
+				console.log(response.length);
+				var freestring = "The following parkingspots are available: \n";
+				var reservedstring = "\n \nThe following parkingspots are reserved: \n";
+				var occupiedstring = "\n \nThe following parkingspots are occupied: \n";
+				
+				for(var i=0; i < response.length; i++)
+				{
+					document.getElementById("parkingspot_id_field").value=response[i].endpoint;
+					console.log(response[i].endpoint);
+					parkingspotname[i]=response[i].endpoint;
+				}
+				for(var i=0; i < response.length; i++)
+				{
+					console.log("get_status"+i+"deze string: "+clientstatus+parkingspotname[i]+objectid);
+					xhttp.timeout = 500;
+					xhttp.open("GET",clientstatus+parkingspotname[i]+objectid , true);
+					xhttp.send();
+					xhttp.onreadystatechange = 
+					function() {
+						if (this.readyState == 4 && this.status == 200) {
+							// Typical action to be performed when the document is ready:
+							//document.getElementById("demo").innerHTML = xhttp.responseText;
+							var response = JSON.parse(xhttp.responseText);
+							console.log(response.content.value);
+							var clientnumber;
+							for(var j=0; j <parkingspotname.length; j++)
+							{
+								if(this.responseURL.includes(parkingspotname[j]))
+								{
+									console.log("this is the right client," + j +" " + parkingspotname[j]);
+									clientnumber = j;
+									break;
+								}
+							}
+
+							if(response.content.value == "free")
+							{
+								parkingspotstatus[clientnumber] = "free";
+								freestring=freestring+parkingspotname[clientnumber]+"\n";
+							}
+							else if(response.content.value == "reserved")
+							{
+								parkingspotstatus[clientnumber] = "reserved";
+								reservedstring=reservedstring+parkingspotname[clientnumber]+"\n";							
+							}
+							else if(response.content.value == "occupied")
+							{
+								parkingspotstatus[clientnumber] = "occupied";
+								occupiedstring=occupiedstring+parkingspotname[clientnumber]+"\n";
+							}							
+						}
+						entiremessagestring= freestring+reservedstring+occupiedstring;
+						document.getElementById('parkingspotlist').value = entiremessagestring;
+					}
+				}
+
+			}
+
+		}
+	}
+
+	function put_reserve_spot()
+	{
+		var parkingspot_ID = document.getElementById('parkingspot_id_field').value;
+		update_parkingspots();
+		setTimeout(function () {
+			var clientnumber;
+			for(var j=0; j <parkingspotname.length; j++)
+			{
+				if(parkingspotname[j] == parkingspot_ID)
+				{
+					console.log("this is the right client," + j +" " + parkingspotname[j]);
+					clientnumber = j;
+					break;
+				}
+			}
+			if(parkingspotstatus[clientnumber] == "free")
+			{
+				xhttp.open("PUT",clientstatus+parkingspot_ID+objectid , true);
+				xhttp.send("reserved");
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						update_parkingspots();
+					}
+				}
+				document.getElementById('reservationfeedback').value = "Reservation of " +parkingspot_ID+ " has succeeded.";
+			}
+			else
+			{
+				document.getElementById('reservationfeedback').value = "Too late, reservation not possible! The parkingspot was already "+ parkingspotstatus[clientnumber];
+				//not possible to make reservation!
+				console.log("Too late, reservation not possible! The parkingspot was already "+ parkingspotstatus[clientnumber]);
+			}
+		}, 1000);		
+	}
+	
+	function put_license_plate()
+	{
+		var parkingspot_ID = document.getElementById('parkingspot_id_field').value;
+		xhttp.open("PUT",clientstatus+parkingspotname[0]+vehicleID , true);
+		xhttp.send("Vehicle-45-1");
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			
+			}
+		}
+	}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

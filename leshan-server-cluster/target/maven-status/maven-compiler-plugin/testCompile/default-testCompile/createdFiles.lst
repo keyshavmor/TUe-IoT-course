@@ -1,0 +1,5 @@
+org/eclipse/leshan/server/cluster/serialization/ResponseSerDesTest.class
+org/eclipse/leshan/server/cluster/serialization/SecurityInfoSerDesTest.class
+org/eclipse/leshan/server/cluster/serialization/RegistrationSerDesTest.class
+org/eclipse/leshan/server/cluster/serialization/RegistrationUpdateSerDesTest.class
+org/eclipse/leshan/server/cluster/serialization/DownlinkRequestSerDesTest.class

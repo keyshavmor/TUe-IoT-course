@@ -1,0 +1,15 @@
+org/eclipse/leshan/server/bootstrap/demo/ConfigurationChecker$1.class
+org/eclipse/leshan/server/bootstrap/demo/servlet/BootstrapServlet.class
+org/eclipse/leshan/server/bootstrap/demo/BootstrapStoreImpl.class
+org/eclipse/leshan/server/bootstrap/demo/ConfigurationChecker$ConfigurationException.class
+org/eclipse/leshan/server/bootstrap/demo/LeshanBootstrapServerDemo$1.class
+org/eclipse/leshan/server/bootstrap/demo/servlet/BootstrapServlet$SignedByteUnsignedByteAdapter.class
+org/eclipse/leshan/server/bootstrap/demo/servlet/ServerServlet.class
+org/eclipse/leshan/server/bootstrap/demo/json/PublicKeySerDes.class
+org/eclipse/leshan/server/bootstrap/demo/BootstrapStoreImpl$1.class
+org/eclipse/leshan/server/bootstrap/demo/LeshanBootstrapServerDemo.class
+org/eclipse/leshan/server/bootstrap/demo/servlet/BootstrapServlet$1.class
+org/eclipse/leshan/server/bootstrap/demo/ConfigurationChecker.class
+org/eclipse/leshan/server/bootstrap/demo/BootstrapSecurityStoreImpl.class
+org/eclipse/leshan/server/bootstrap/demo/json/SecuritySerializer.class
+org/eclipse/leshan/server/bootstrap/demo/json/X509CertificateSerDes.class

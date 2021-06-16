@@ -1,0 +1,10 @@
+org/eclipse/leshan/server/californium/LeshanBootstrapServerBuilderTest$4.class
+org/eclipse/leshan/server/californium/impl/ObservationServiceTest.class
+org/eclipse/leshan/server/californium/impl/InMemoryRegistrationStoreTest.class
+org/eclipse/leshan/server/californium/LeshanBootstrapServerBuilderTest$2.class
+org/eclipse/leshan/server/californium/impl/CaliforniumTestSupport.class
+org/eclipse/leshan/server/californium/LeshanBootstrapServerBuilderTest.class
+org/eclipse/leshan/server/californium/LeshanBootstrapServerBuilderTest$3.class
+org/eclipse/leshan/server/californium/impl/CoapRequestBuilderTest.class
+org/eclipse/leshan/server/californium/LeshanServerBuilderTest.class
+org/eclipse/leshan/server/californium/LeshanBootstrapServerBuilderTest$1.class

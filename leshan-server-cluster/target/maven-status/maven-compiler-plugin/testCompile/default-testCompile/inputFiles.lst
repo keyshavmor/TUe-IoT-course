@@ -1,0 +1,5 @@
+/home/keyshav/ti/leshan/leshan-server-cluster/src/test/java/org/eclipse/leshan/server/cluster/serialization/RegistrationSerDesTest.java
+/home/keyshav/ti/leshan/leshan-server-cluster/src/test/java/org/eclipse/leshan/server/cluster/serialization/DownlinkRequestSerDesTest.java
+/home/keyshav/ti/leshan/leshan-server-cluster/src/test/java/org/eclipse/leshan/server/cluster/serialization/ResponseSerDesTest.java
+/home/keyshav/ti/leshan/leshan-server-cluster/src/test/java/org/eclipse/leshan/server/cluster/serialization/SecurityInfoSerDesTest.java
+/home/keyshav/ti/leshan/leshan-server-cluster/src/test/java/org/eclipse/leshan/server/cluster/serialization/RegistrationUpdateSerDesTest.java
